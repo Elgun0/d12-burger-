@@ -1,0 +1,134 @@
+/* Header start */
+#header{
+    background: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+#header .menu li{
+    padding: 15px 20px;
+}
+#header .menu li:hover{
+    border-bottom: 1px solid gold;
+    color: gold;
+    cursor: pointer;
+}
+#header .social-icons i{
+    padding: 8px 10px;
+    background: #fff;
+    border-radius: 50%;
+    color: #000;
+    margin-left: 8px;
+    transition: .3s;
+    cursor: pointer;
+}
+#header .social-icons i:hover{
+    background: gold;
+}
+#header .social-icons i:nth-child(1){
+    padding: 8px 12px;
+}
+#header .social-icons i:nth-child(2){
+    padding: 8px 9px;
+}
+/* Header end */
+/* Super Burger start */
+#superburger{
+    background: url(../photo/1.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+#superburger .smoke{
+    background: url(../photo/smoke.png);
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    opacity: 0;
+    transform:translate(-50%, -50%);
+    background-repeat: no-repeat;
+    animation: anismoke 6s infinite;
+}
+#superburger .smoke:nth-child(1){
+    animation-delay: 0s;
+}
+#superburger .smoke:nth-child(2){
+    animation-delay: 1s;
+}
+#superburger .smoke:nth-child(3){
+    animation-delay: 2s;
+}
+#superburger .smoke:nth-child(4){
+    animation-delay: 3s;
+}
+#superburger .smoke:nth-child(5){
+    animation-delay: 4s;
+}
+
+@keyframes anismoke{
+    from{
+        transform: translate(-50%,0);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-50%,-50%);
+        opacity: 0;
+    }
+}
+/* SUper Burger end */
+/* Natural start */
+#natural{
+    padding-top: 4em;
+}
+#natural .nat-right{
+    color: grey;
+}
+#natural h1{
+    padding: 20px 0;
+    color: #000;
+    font-size: 3em;
+    font-family: 'Oswald', sans-serif;
+}
+#natural p{
+    margin-bottom: 25px;
+    line-height: 1.85;
+}
+#natural li{
+    padding: 4px 0;
+    letter-spacing: .5;
+}
+.bg-effect {
+    position: relative;
+    padding-left: 50px;
+    padding-top: 4px;
+    font-size: 1.4em;
+    font-weight: 900;
+    color: #fff;
+}
+.bg-effect::before{
+    content:'';
+    position: absolute;
+    background-image: url(../photo/title.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 25px 0;
+    left: 0;
+    top: -50%;
+    z-index: -5;
+}
+/* Natural end */
+
+/* Menu start */
+#menu .menu-top{
+    text-align: center;
+}
+#menu .bg-effect {
+    padding: 18px;
+}
+#menu .bg-effect::before{
+    background-position: center;
+}
